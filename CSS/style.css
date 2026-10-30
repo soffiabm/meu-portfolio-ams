@@ -1,0 +1,104 @@
+:root {
+  --bg-principal: #291B21;
+  --bg-secoes: #39262E;
+  --bg-cartoes: #503943;
+  --cor-bordas: #79666D;
+  --cor-botoes: #C17E94;
+  --cor-secundaria: #A27A86;
+  --texto-principal: #F1E7EA;
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--texto-principal);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, label, strong {
+  color: var(--texto-principal);
+}
+
+.text-muted, .text-subtle, .section-subtitle {
+  color: var(--cor-secundaria) !important;
+}
+
+.navbar-custom {
+  background-color: rgba(41, 27, 33, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--cor-bordas);
+}
+
+.navbar-brand-logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo-badge {
+  background-color: var(--cor-botoes);
+  color: var(--texto-principal);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-right: 6px;
+}
+
+section {
+  background-color: var(--bg-secoes);
+  position: relative;
+}
+
+#inicio {
+  background-color: var(--bg-principal);
+}
+
+.glass-panel, .project-card, .skill-card, .about-card {
+  background-color: var(--bg-cartoes) !important;
+  border: 1px solid var(--cor-bordas) !important;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel:hover, .project-card:hover, .skill-card:hover {
+  border-color: var(--cor-botoes) !important;
+  transform: translateY(-3px);
+}
+
+.btn-primary-gradient, .badge-glass, .project-category-tag {
+  background-color: var(--cor-botoes) !important;
+  color: var(--texto-principal) !important;
+  border: none;
+}
+
+.btn-glass-secondary {
+  background-color: rgba(162, 122, 134, 0.2);
+  color: var(--texto-principal);
+  border: 1px solid var(--cor-bordas);
+  backdrop-filter: blur(6px);
+}
+
+.btn-glass-secondary:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--texto-principal);
+}
+
+.text-gradient, .text-gradient-cyan {
+  color: var(--cor-botoes) !important;
+}
+
+.skill-progress-track {
+  background-color: var(--bg-principal);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.skill-progress-bar {
+  background-color: var(--cor-botoes);
+  height: 100%;
+}
